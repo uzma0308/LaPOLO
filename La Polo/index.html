@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LaPolo Navbar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript">
+
+    let flag=0,flagl=0;
+    $(document).ready(function(){
+
+    let playerImg=["2.jpg","10.jpg","5.jpg","4.jpg"];
+    let playerA=["THE MOST CELEBRATED KNIGHT: NACHO FIGUERAS","OLO PLAYER OF THE WEEK- ALFIO MARCHINI","POLO PLAYER OF THE WEEK- LYNLY FONG","MARIANO TO BE INDUCED IN MUSEUM OF POLO'S HALL OF FAME, FLORIDA"];
+
+    let clubImg=["1.jpg","11.jpg","3.jpg","7.jpg"];
+    let clubA=["TIME TRAVEL TO CALCUTTA POLO CLUB AND THE BIRTH OF EZRA CUP","THE SPLENDIFEROUS 20-GOALS JOE BARRY CUP 2018 : DAY-1","STRENUOUS ENCOUNTER FOR THE HERBIE PENELL","BEACH POLO WORLD CUP - MIAMI"];
+
+    let tourImg=["8.jpg","9.jpg","6.jpg","2.jpg"];
+    let tourA=["ARGENTINA AMATEUR CHAMPIONSHIP","THE MOSCOW POLO CLUB: TRAINING THE BEST","THE CLUB OF THE ROYALS: GUARDS POLO CLUB","BRITISH POLO CLUB THE COWDRAY PARK: AFFILIATES WITH SINGAPORE"];
+
+       let gearImg=["8.jpg","9.jpg","6.jpg","2.jpg"];
+    let gearA=["ARGENTINA AMATEUR CHAMPIONSHIP","THE MOSCOW POLO CLUB: TRAINING THE BEST","THE CLUB OF THE ROYALS: GUARDS POLO CLUB","BRITISH POLO CLUB THE COWDRAY PARK: AFFILIATES WITH SINGAPORE"];
+
+       let pleasureImg=["1.jpg","10.jpg","5.jpg","4.jpg"];
+    let pleasureA=["THE MOST CELEBRATED KNIGHT: NACHO FIGUERAS","OLO PLAYER OF THE WEEK- ALFIO MARCHINI","POLO PLAYER OF THE WEEK- LYNLY FONG","MARIANO TO BE INDUCED IN MUSEUM OF POLO'S HALL OF FAME, FLORIDA"];
+
+       let fashionImg=["2.jpg","11.jpg","3.jpg","7.jpg"];
+    let fashionA=["ARGENTINA AMATEUR CHAMPIONSHIP","THE MOSCOW POLO CLUB: TRAINING THE BEST","THE CLUB OF THE ROYALS: GUARDS POLO CLUB","BRITISH POLO CLUB THE COWDRAY PARK: AFFILIATES WITH SINGAPORE"];
+
+       let brandImg=["8.jpg","9.jpg","6.jpg","2.jpg"];
+    let brandA=["TIME TRAVEL TO CALCUTTA POLO CLUB AND THE BIRTH OF EZRA CUP","THE SPLENDIFEROUS 20-GOALS JOE BARRY CUP 2018 : DAY-1","STRENUOUS ENCOUNTER FOR THE HERBIE PENELL","BEACH POLO WORLD CUP - MIAMI"];
+
+    for(var i=0;i<4;i++)
+    {
+      $("#"+i).children().attr("src","image/"+playerImg[i]);
+      $("#"+i).find("a").text(playerA[i]);
+    }
+
+    for(var i=0;i<4;i++)
+    {
+      $("#"+i+"l").children().attr("src","image/"+gearImg[i]);
+      $("#"+i+"l").find("a").text(gearA[i]);
+    }
+
+    $('#polo').hide();
+    $('#lifestyle').hide();
+    flag=1;
+    flagl=1;
+
+    //for player
+    $("#player").hover(function(){
+      $(this).toggleClass('hover_data');
+        for(var i=0;i<4;i++)
+          {
+            $("#"+i).children().attr("src","image/"+playerImg[i]);
+            $("#"+i).find("a").text(playerA[i]);
+          }
+    });
+
+    //for club
+
+     $("#club").hover(function(){
+       $(this).toggleClass('hover_data');
+        for(var i=0;i<4;i++)
+          {
+            $("#"+i).children().attr("src","image/"+clubImg[i]);
+            $("#"+i).find("a").text(clubA[i]);
+          }
+    });
+
+     //for tournamnt
+
+      $("#tournament").hover(function(){
+
+        $(this).toggleClass('hover_data');
+        for(var i=0;i<4;i++)
+          {
+            $("#"+i).children().attr("src","image/"+tourImg[i]);
+            $("#"+i).find("a").text(tourA[i]);
+          }
+    });
+
+      //for gear
+
+      $("#gear").hover(function(){
+
+        $(this).toggleClass('hover_data');
+        for(var i=0;i<4;i++)
+          {
+            $("#"+i+"l").children().attr("src","image/"+gearImg[i]);
+            $("#"+i+"l").find("a").text(gearA[i]);
+          }
+    });
+
+      //for pleasure
+
+      $("#pleasure").hover(function(){
+
+        $(this).toggleClass('hover_data');
+        for(var i=0;i<4;i++)
+          {
+            $("#"+i+"l").children().attr("src","image/"+pleasureImg[i]);
+            $("#"+i+"l").find("a").text(pleasureA[i]);
+          }
+    });
+
+       //for fashion
+
+      $("#fashion").hover(function(){
+
+        $(this).toggleClass('hover_data');
+        for(var i=0;i<4;i++)
+          {
+            $("#"+i+"l").children().attr("src","image/"+fashionImg[i]);
+            $("#"+i+"l").find("a").text(fashionA[i]);
+          }
+    });
+
+       //for brand
+
+      $("#brand").hover(function(){
+
+        $(this).toggleClass('hover_data');
+        for(var i=0;i<4;i++)
+          {
+            $("#"+i+"l").children().attr("src","image/"+brandImg[i]);
+            $("#"+i+"l").find("a").text(brandA[i]);
+          }
+    });
+
+      //for view all
+
+       $("#view").hover(function(){
+
+        $(this).toggleClass('hover_data');
+    });
+
+        $("#viewAll").hover(function(){
+
+        $(this).toggleClass('hover_data');
+    });
+
+        $("#img_div").hover(function(){
+    $("#polo").hide();
+    $("#lifestyle").hide();
+});
+    
+
+});
+    function change()
+    {
+      if(flag==1)
+      {
+      $('#polo').show();
+      $('#lifestyle').hide();
+      flagl=1;
+      flag=0;
+      }
+    else
+    {
+      $('#polo').hide();
+      flag=1;
+    }
+    }
+
+    function changelyf()
+    {
+      if(flagl==1)
+      {
+      $('#lifestyle').show();
+       $('#polo').hide();
+       flag=1;
+      flagl=0;
+    }
+    else
+    {
+      $('#lifestyle').hide();
+      flagl=1;
+    }
+    }
+  </script>
+
+  
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">SUBSCRIBE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a onmouseover="change()">POLO<span class="caret"></span></a></li>
+        <li><a href="#">INDIAN POLO</a></li>
+        <li class="dropdown">
+          <a onmouseover="changelyf()">LIFESTYLE<span class="caret"></span></a>
+        </li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">MAGAZINE</a></li>
+        <li><a href="#">M-NEWSLETTER</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Find us on</a></li>
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid">
+<div class="row polo" id="polo">
+  <div class="col-sm-2">
+    <ul style="list-style-type: none" class="polo_list">
+        <li id="player">PLAYER</li>
+        <li id="club">CLUB</li>
+        <li id="tournament">TOURNAMENT</li>
+        <li id="view">VIEW ALL</li>
+    </ul>
+  </div>
+  <div class="col-sm-10">
+      <div class="row">
+      <div class="col-sm-3" id="0">
+         <img src="" class="img-responsive">
+         <a></a> 
+      </div>
+      <div class="col-sm-3" id="1">
+        <img src="" class="img-responsive">
+        <a></a> 
+      </div>
+      <div class="col-sm-3" id="2">
+        <img src="" class="img-responsive"> 
+        <a></a>
+      </div>
+      <div class="col-sm-3" id="3">
+        <img src="" class="img-responsive">
+        <a></a>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="row polo" id="lifestyle"  >
+  <div class="col-sm-2">
+    <ul style="list-style-type: none" class="polo_list">
+        <li id="gear">GEAR</li>
+        <li id="pleasure">PLEASURE</li>
+        <li id="fashion">FASHION</li>
+        <li id="brand">BRAND</li>
+        <li id="viewAll">VIEW ALL</li>
+    </ul>
+  </div>
+
+
+ <div class="col-sm-10">
+      <div class="row">
+        <div class="col-sm-3" id="0l">
+           <img src="" class="img-responsive">
+           <a></a> 
+        </div>
+        <div class="col-sm-3" id="1l">
+        <img src="" class="img-responsive">
+        <a>P</a> </div>
+        <div class="col-sm-3" id="2l">
+        <img src="" class="img-responsive"> 
+        <a></a></div>
+        <div class="col-sm-3" id="3l">
+        <img src="" class="img-responsive">
+        <a></a></div>
+        </div>
+      </div>
+</div>
+
+   <div>
+    <h1>LA POLO</h1> 
+</div>
+<div class="row">
+<div class="col-sm-12" style="padding: 0px;" id="img_div">
+  <img src="image/main.png" class="img-responsive"></img>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
